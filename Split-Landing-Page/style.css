@@ -1,0 +1,295 @@
+/* FONTS
+=========================== */
+@font-face {
+  font-family: 'sansserifexbflf-italic';
+  src: url('./font/sansserifexbflf-italic.otf');
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+/* GENERAL
+=========================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: #242526;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  
+}
+
+ion-icon {
+  font-size: 25px;
+}
+/* CONTENT
+=========================== */
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.split.left {
+  left: 0;
+  background: #e7e9e8;  
+}
+
+.split.right {
+  right: 0;
+  background: #fff;
+}
+
+.logos{
+  height: 18vh;
+  transition: all 1s
+}
+
+.text {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 80%;
+}
+.text .desc {
+  font-size: 14px;
+  color: #242526;
+  font-weight: 400;
+  line-height: 2;
+  margin: 10px 0 30px 0;
+}
+
+.text .button {
+  font-size: 16px;
+  color: #242526;
+  background: transparent;
+  border: #242526 solid 2px;
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 100px;
+}
+
+.footer{
+    position: absolute;
+    color: #242526;
+    font-size: 1.5vw;
+    right: 3%;
+    bottom:5%;
+}
+
+.indicator img{
+  top: 70%;
+  width: 2.3vw;
+  left: 48.8%;
+  position: absolute;
+  z-index: 100;
+  border-radius: 100px;
+  transition: all 1s;
+}
+
+.indicator .fa{
+  font-size: 2.3vw;
+  color: #242526;
+  position: absolute;
+  top: 71%;
+  z-index: 100;
+  transition: all 1s;
+}
+.indicator .fa-angle-left{
+  left:46.5%
+} 
+
+.indicator .fa-angle-right{
+  right:46.5%
+}
+/*----Hover---*/
+.hover-left .split.left {
+  width: 60%;
+}
+
+.hover-left .split.right {
+  width: 40%;
+}
+.hover-left .indicator img{
+  left:58.8%
+}
+
+.hover-left .indicator .fa-angle-left{
+  left:56.5%
+}
+
+.hover-left .indicator .fa-angle-right{
+  right:36.5%
+}
+
+.hover-left .left-btn{
+  border-color: #008577 ;
+  background-color: #008577 ;
+  color: white;
+}
+
+.hover-right .split.right {
+  width: 60%;
+}
+
+.hover-right .split.left {
+  width: 40%;
+}
+
+.hover-right .indicator img{
+  left:38.8%
+}
+
+.hover-right .indicator .fa-angle-left{
+  left:36.5%
+}
+
+.hover-right .indicator .fa-angle-right{
+  right:56.5%
+}
+
+.hover-right .right-btn{
+  border-color: #FD5D03 ;
+  background-color: #FD5D03 ;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+.split{
+  height: 50%;
+  width: 100%;
+}
+.split .left{
+  top: 0;  
+}
+.split.right {
+  bottom: 0;
+}
+.logos {
+  height: 10vh;
+}
+.text {
+  left: 10%;
+  top: 10%;
+}
+.text .desc {
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.text .button{
+  padding: 7px 23px;
+  font-size: 15px;
+}
+.indicator{
+  display: none ;
+}
+.footer {
+  font-size: 1.5vh;
+}
+
+
+/*----Hover---*/
+.hover-left .split.left {
+  width: 100%;
+  height: 60%;
+}
+
+.hover-left .split.right {
+  height: 40%;
+  width: 100%;
+}
+
+.hover-right .split.right {
+  height: 60%;
+  width: 100%;
+}
+
+.hover-right .split.left {
+  height: 40%;
+  width: 100%;
+}
+
+.hover-left .left .logos{
+  height: 11vh;
+}
+
+.hover-left .right .logos{
+  height: 9vh;
+}
+
+.hover-right .left .logos{
+  height: 9vh;
+}
+
+.hover-right .right .logos{
+  height: 11vh;
+}
+
+.hover-left .left .desc{
+  font-size: 15px;
+}
+
+.hover-left .right .logos{
+  font-size: 11px;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+  .text .desc {
+    font-size: 13px;
+  }
+  .hover-left .left .logos{
+    height: 11vh;
+  }
+  
+  .hover-left .right .logos{
+    height: 9vh;
+  }
+  
+  .hover-right .left .logos{
+    height: 9vh;
+  }
+  
+  .hover-right .right .logos{
+    height: 11vh;
+  }
+  
+  .hover-left .left .desc{
+    font-size: 15px;
+  }
+  
+  .hover-left .right .desc{
+    font-size: 11px;
+  }
+
+  .hover-right .left .desc{
+    font-size: 11px;
+  }
+  
+  .hover-right .right .desc{
+    font-size: 15px;
+  }
+}
