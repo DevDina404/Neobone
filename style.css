@@ -248,18 +248,29 @@ ion-icon {
 }
 
 .hover-left .left .desc{
+  font-size: 18px;
+}
+
+.hover-left .right .desc{
   font-size: 15px;
 }
 
-.hover-left .right .logos{
-  font-size: 11px;
+.hover-right .left .desc{
+  font-size: 15px;
 }
+
+.hover-right .right .desc{
+  font-size: 18px;
+}
+
+
+
 
 }
 
 @media only screen and (max-width: 480px) {
   .text .desc {
-    font-size: 13px;
+    font-size: 11px;
   }
   .hover-left .left .logos{
     height: 11vh;
@@ -278,18 +289,18 @@ ion-icon {
   }
   
   .hover-left .left .desc{
-    font-size: 15px;
+    font-size: 13px;
   }
   
   .hover-left .right .desc{
-    font-size: 11px;
+    font-size: 9px;
   }
 
   .hover-right .left .desc{
-    font-size: 11px;
+    font-size: 9px;
   }
   
   .hover-right .right .desc{
-    font-size: 15px;
+    font-size: 13px;
   }
 }
